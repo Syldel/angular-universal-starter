@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainHeaderComponent } from './main-header/main-header.component';
 
+import { HomePageModule } from './home-page/home-page.module';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -12,7 +14,8 @@ import { MainHeaderComponent } from './main-header/main-header.component';
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
-    AppRoutingModule
+    AppRoutingModule,
+    HomePageModule
   ],
   providers: [],
   bootstrap: [AppComponent]

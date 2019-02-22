@@ -53,3 +53,34 @@ For AOT compilation, include the --aot option with the ng build or ng serve comm
 `ng serve --aot`
 
 The `ng build` command with the --prod meta-flag (`ng build --prod`) compiles with AOT by default.
+
+
+## Generation with cli
+
+### Module
+To create a new generic NgModule definition in the given or default project:
+
+`ng g module <name> [options]`
+
+About options:
+--routing=true|false	
+When true, creates a routing module. (Default: false)
+
+Example:
+`ng g m home-page --routing=true`
+
+
+### Component
+To create a new generic component definition in the given or default project:
+
+`ng g component <name> [options]`
+
+About options:
+--export=true|false	
+When true, the declaring NgModule exports this component. (Default: false)
+
+--module=module	
+The declaring NgModule. (Aliases: -m)
+
+Example:
+`ng g c home-page --style=sass`
