@@ -11,7 +11,7 @@ import { MainHeaderComponent } from './main-header/main-header.component';
     MainHeaderComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule
   ],
   providers: [],
