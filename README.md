@@ -34,6 +34,12 @@ Run `ng add @nguniversal/express-engine --clientProject angular-web-app`
 More informations here:
 https://angular.io/guide/universal
 
+To develop use:
+`ng serve`
+
+To test the "ssr" version:
+`npm run build:ssr && npm run serve:ssr`
+
 
 ## Angular compilation
 
@@ -84,3 +90,11 @@ The declaring NgModule. (Aliases: -m)
 
 Example:
 `ng g c home-page --style=sass`
+
+
+## To install Pug (Jade)
+
+(With Angular CLI 6.0 or higher)
+https://medium.com/@MarkPieszak/using-pug-or-jade-templates-with-the-angular-cli-9e37334db5bc
+
+`ng add ng-cli-pug-loader`
