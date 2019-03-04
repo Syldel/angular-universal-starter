@@ -1,0 +1,19 @@
+// Example:
+// https://github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/_variables.scss
+$grid-float-breakpoint: 300px !default; //$screen-sm-min !default;
+$brand-primary: #ff7600; //darken(#EE7600, 6.5%) !default;
+//$brand-success:         #5cb85c !default;
+//$brand-info:            #5bc0de !default;
+//$brand-warning:         #f0ad4e !default;
+//$brand-danger:          #d9534f !default;
+//$link-color: #EE7600;
+//** Link hover color set via `darken()` function.
+$link-hover-color: #ee412e; //darken($link-color, 15%) !default;
+$gray-lighter: #FBFBFB !default;
+$body-bg: #f0f0f0 !default;
+$well-bg: #FBFBFB !default;
+$breadcrumb-bg: #FBFBFB !default;
+$input-bg: #FAFAFA !default;
+$icon-font-path: "../node_modules/bootstrap-sass/assets/fonts/bootstrap/" !default;
+//** Border color for inputs on focus
+$input-border-focus: #ffb630 !default;

@@ -1,1 +1,13 @@
-p.main-header-title main-header works!
+// Fixed navbar
+// nav.navbar.navbar-inverse.navbar-fixed-top
+//
+nav.navbar.navbar-default.mainNavbar
+  .container
+    .navbar-header
+      a.navbar-brand(href='#') Bootstrap theme
+    #navbar.navbar-collapse.collapse
+      ul.nav.navbar-nav
+        li(role='home', routerLinkActive='active')
+          a([routerLink]="['/home']") Accueil
+        li(role='about', routerLinkActive='active')
+          a([routerLink]="['/about']") About
