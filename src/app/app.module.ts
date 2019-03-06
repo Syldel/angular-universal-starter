@@ -7,6 +7,7 @@ import { MainHeaderComponent } from './main-header/main-header.component';
 
 import { HomePageModule } from './home-page/home-page.module';
 import { AboutPageModule } from './about-page/about-page.module';
+import { NotFoundPageModule } from './not-found-page/not-found-page.module';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { AboutPageModule } from './about-page/about-page.module';
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     HomePageModule,
-    AboutPageModule
+    AboutPageModule,
+    NotFoundPageModule
   ],
   providers: [],
   bootstrap: [AppComponent]
