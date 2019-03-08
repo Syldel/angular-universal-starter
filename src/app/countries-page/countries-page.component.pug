@@ -1,0 +1,22 @@
+p.countries-page-title countries works!
+
+.navbar.navbar-default
+  ul.nav.navbar-nav
+    li(role='countries/fr', routerLinkActive='active')
+      a([routerLink]="['/countries/fr']") /countries/fr
+    li(role='countries/en', routerLinkActive='active')
+      a([routerLink]="['/countries/en']") /countries/en
+
+.well(*ngIf="response")
+  div(*ngIf="!response.error")
+    | Response is: {{response | json}}
+    br
+    br
+    img.img-responsive(src="{{response.flag}}", alt="country flag")
+
+  .alert.alert-danger(*ngIf="response.name === 'HttpErrorResponse'", role="alert")
+    i.glyphicon.glyphicon-alert.right-spacer
+    span.right-spacer Erreur :
+    strong.right-spacer {{response.error.status || response.status}}
+    strong {{response.error.message || response.statusText}}
+    div(*ngIf="response.message") {{response.message}}
