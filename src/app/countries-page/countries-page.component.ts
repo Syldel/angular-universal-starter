@@ -26,14 +26,17 @@ export class CountriesPageComponent implements OnInit {
     });
 
     this.router.data.subscribe(data => {
-      this.response = data.response;
-
-      if (this.response.name) {
-        this.title.setTitle('Titre de la page Country ' + this.response.name);
-        this.meta.updateTag({
-          name: 'description',
-          content: 'description de la page Country ' + this.response.name
-        });
+      if (data.response) {
+        this.response = data.response;
+        if (this.response.name) {
+          this.title.setTitle('Titre de la page Country ' + this.response.name);
+          this.meta.updateTag({
+            name: 'description',
+            content: 'description de la page Country ' + this.response.name
+          });
+        }
+      } else {
+        this.response = null;
       }
     });
   }
