@@ -98,3 +98,17 @@ Example:
 https://medium.com/@MarkPieszak/using-pug-or-jade-templates-with-the-angular-cli-9e37334db5bc
 
 `ng add ng-cli-pug-loader`
+
+
+# Heroku
+
+To launch the bash :
+`$ heroku run bash`
+
+To quit the bash mode :
+`$ exit`
+
+To restart dynos :
+`$ heroku ps:restart`
+
+(Will do a "npm start")
