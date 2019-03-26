@@ -14,7 +14,7 @@
         "build:client-and-server-bundles": "ng build --prod && ng run angular-web-app:server:production",
         "postinstall": "node ./ng-add-pug-loader.js",
         "heroku-postbuild": "npm run build:ssr && npm run s3cdn",
-        "s3cdn": "amazon-s3-cdn --config ./s3-config.js"
+        "s3cdn": "amazon-s3-cdn --config ../../s3-config.js"
     },
     "private": true,
     "dependencies": {
@@ -31,7 +31,7 @@
         "@angular/router": "~7.2.0",
         "@nguniversal/express-engine": "^7.1.0",
         "@nguniversal/module-map-ngfactory-loader": "0.0.0",
-        "amazon-s3-cdn": "^0.1.5",
+        "amazon-s3-cdn": "^0.2.1",
         "bootstrap-sass": "^3.4.1",
         "core-js": "^2.5.4",
         "express": "^4.15.2",

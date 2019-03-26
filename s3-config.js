@@ -7,7 +7,6 @@ config.fileExtensions = [
     'woff',
     'svg',
     'ttf',
-    'woff',
     'eot',
     'ico'
 ];
@@ -21,5 +20,6 @@ config.s3Options = {
 config.localDir = './dist/browser';
 config.s3Bucket = process.env.AWS_S3_BUCKET;
 config.subDir = process.env.NODE_ENV || 'development';
+config.cdnDomain = process.env.CDN_DOMAIN;
 
 module.exports = config;
